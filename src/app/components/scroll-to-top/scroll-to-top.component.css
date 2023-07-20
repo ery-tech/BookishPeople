@@ -1,0 +1,31 @@
+ .button{
+  background-color: rgb(29, 201, 213);
+  background: radial-gradient(circle, rgb(46, 153, 153) 0%, rgb(83, 239, 242) 100%);
+  color: white !important;
+  border-radius: 50%;
+  border-color: transparent;
+  position: fixed;
+  bottom: 65px;
+  right: 3%;
+  z-index: 20;
+  opacity: 0;
+  width:3rem;
+  height: 3rem;
+  padding: 6px;
+  transition: all .2s ease-in-out;
+ }
+ .show-scrollTop {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+ }
+ .button:hover,.button:focus{
+color: white;
+outline: none;
+border-style: none;
+background-color: rgb(27, 180, 191);
+background: radial-gradient(circle, rgb(39, 127, 127) 0%, rgb(75, 213, 215) 100%);
+}
+.white{
+  color: white !important;
+
+}

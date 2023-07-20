@@ -1,7 +1,6 @@
 <h1>Bookish People </h1>
 <div align="center">
-<img src="![bookish](https://github.com/ery-tech/BookishPeople/assets/117271118/22f0a693-2a7c-485e-9646-c01a553e2848)
-" width="400px" height="400px" style="position:absolute" frameBorder="0" class="giphy-embed" alt="screenshot"/>
+<img src="https://github.com/ery-tech/BookishPeople/assets/117271118/22f0a693-2a7c-485e-9646-c01a553e2848" width="400px" height="400px" style="position:absolute" frameBorder="0" class="giphy-embed" alt="screenshot"/>
 </div>
 <h2> Description </h2>
 

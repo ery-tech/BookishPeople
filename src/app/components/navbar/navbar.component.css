@@ -1,0 +1,9 @@
+.navbar{
+  z-index: 10;
+  width: 100vw;
+  background-color: rgb(29, 201, 213);
+  background: radial-gradient(circle, rgb(8, 8, 129) 0%, rgb(23, 154, 169) 100%);
+}
+.navbar ul, .navbar a {
+  color: aliceblue;
+}

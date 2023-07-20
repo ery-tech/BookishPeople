@@ -1,0 +1,119 @@
+.body{
+  display: flex;
+  padding: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+   top: 0rem;
+}
+
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 7rem;
+
+}
+.input-search{
+  height: 50px;
+  width: 300px;
+  border-style: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border:2px solid rgb(71, 227, 255);
+  border-radius: 25px;
+  background-color: #0499b0;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  outline: none;
+  border-style: none;
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page {
+  width: 250px;
+  height: 400px;
+  padding: 30px;
+  background:rgb(71, 166, 224);
+  border-left: 30px solid #29ffdb;
+  transform: rotate(-45deg) skewX(10deg) skewY(5deg) scale(.8);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)
+}
+.page:before {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background: #1aa890;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewY(-45deg) translate(-57px, -43px)
+}
+
+.page:after {
+  content: "";
+  width: 106%;
+  height: 30px;
+  background: #CCC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: skewX(-45deg) translate(-11px, 30px)
+}
+
+@media only  screen and (min-width: 300px)and (max-width: 600px) {
+  .page {
+    width: 180px;
+    height: 250px;
+    padding: 15px;}
+
+  .center{
+    top:65%;
+  }
+  .search-box{
+    top:6rem;
+  }
+ .page h2 p{
+  font-size: smaller;
+ }
+}
+@media only  screen and (min-width: 601px)and (max-width: 800px) {
+  .center{
+    top:65%;
+  }
+  .page {
+    width: 220px;
+    height: 350px;
+    padding: 15px;}
+}

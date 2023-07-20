@@ -1,0 +1,46 @@
+<div class="container container-fluid">
+<div class="books-container container-fluid">
+
+
+      <div class="row cards-row ">
+        <div class=" col-sm-10 mx-auto" *ngFor="let book of booksList; let i = index ;">
+          <ng-container *ngIf="booksList != ''"  >
+
+          <div class="card container-fluid">
+          <h6  >{{book.title}}</h6>
+          <ng-container *ngIf="book.authors">
+            <p class="card-title" >by {{book.authors[0].name}}</p>
+          </ng-container>
+            <div> <img [src]="myImgs[counter]"
+              alt="bookish animals" width="60px" > </div>
+            <button class="btn button" (click)="getDescription(book.key)" (click)="checkDescriptionKey(book.key)">See description</button>
+         <ng-container *ngIf="clickedKey == book.key">
+          <hr class="hr"/>
+           <p class="description" >
+
+            {{description}}
+
+         </p>
+         </ng-container>
+        </div>
+      </ng-container>
+      </div>
+        </div>
+
+    </div>
+   <ng-container *ngIf="searchValue">
+    <div class="load-more-div">
+      <button class="btn load-btn" (click)="getPreviousBooks()"><i class="fa-solid fa-hand-point-left"></i></button>
+      <span class="space-between"></span>
+      <button class="btn load-btn" (click)="getMoreBooks()"><i class="fa-solid fa-hand-point-right"></i></button>
+      <div class="footer" >
+        <p>  The information provided by the content on this site is maintained by
+          OpenLibrary Api. </p>
+        </div>
+    </div>
+    </ng-container>
+
+
+
+    </div>
+
