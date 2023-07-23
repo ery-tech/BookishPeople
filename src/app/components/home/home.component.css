@@ -11,7 +11,7 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
 
 }
 .input-search{
@@ -63,7 +63,7 @@
 
 .page {
   width: 250px;
-  height: 400px;
+  height: 350px;
   padding: 30px;
   background:rgb(71, 166, 224);
   border-left: 30px solid #29ffdb;
