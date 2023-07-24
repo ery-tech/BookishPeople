@@ -42,12 +42,20 @@ randomNumber(min:number, max:number) {
 
 
 //on button click get book description
-    getDescription(key: any){
-    this.http.getBookDescription(key).subscribe(res =>{
-      this.description =   res.description.value
-      if (res.description.value == undefined){
+    getDescription(){
+    this.http.getBookDescription(this.clickedKey).subscribe(res =>{
+     if(res.description){
+
+      this.description = res.description.value
+      if(res.description.value ==  undefined){
         this.description = res.description
       }
+     }
+     else if(!res.description){
+      this.description = 'No description available'
+     }
+    console.log(this.description)
+
 
       })
 
@@ -56,6 +64,8 @@ randomNumber(min:number, max:number) {
     // show description
     checkDescriptionKey(key:any){
       this.clickedKey = key
+      console.log(this.clickedKey)
+      this.getDescription()
     }
 
 

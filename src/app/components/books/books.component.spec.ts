@@ -26,7 +26,6 @@ describe('BooksComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should return description value ', () => {
-    const key = 1;
     const stubBook = {
       key:1,
       description: {
@@ -34,23 +33,30 @@ describe('BooksComponent', () => {
       }
     }
     spyOn(service, 'getBookDescription').and.returnValue(of (stubBook));
-    component.getDescription(key);
+    component.getDescription();
     expect(component.description).toEqual('Description 1' )
 });
 
 it('if description value is undefined it should return description ', () => {
-  const key = 2;
   const stubBook = {
     key:2,
     description: 'Description 2'
 
   }
   spyOn(service, 'getBookDescription').and.returnValue(of (stubBook));
-  component.getDescription(key);
+  component.getDescription();
   expect(component.description.value).toEqual(undefined )
   expect(component.description).toEqual('Description 2' )
 });
+it('if description  is undefined it should return No description available  ', () => {
+  const stubBook = {
+    key:2,
 
+  }
+  spyOn(service, 'getBookDescription').and.returnValue(of (stubBook));
+  component.getDescription();
+  expect(component.description).toEqual('No description available')
+});
 
 it('should call getBooksList with offset when getMoreBooks is called ', () => {
   let fakeBooksList  =[ {

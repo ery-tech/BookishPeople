@@ -19,6 +19,7 @@ When the user clicks on a special button, the application will display the descr
 </ul>  </p>
 <hr>
 
+<p > <strong>Unit Testing 85% </strong> </p>
 <h3>Technology stack: </h3>
 <span>
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
