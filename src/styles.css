@@ -17,3 +17,32 @@ body{
   background-color: rgb(2, 2, 99);
 
 }
+
+html, body { height: 100%; }
+body { margin: 0;  }
+
+
+
+
+/* WebKit and Chromiums */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #9bf1e2;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  background-color: #61f8dc;
+}
+/* Firefox */
+html {
+  scrollbar-shadow-color:inset 0 0 6px rgba(0,0,0,0.5);
+  scrollbar-color: #21d6b5  #61f8dc;
+  scrollbar-width: thin;
+}

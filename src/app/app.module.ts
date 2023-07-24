@@ -11,6 +11,8 @@ import { BooksComponent } from './components/books/books.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,14 +21,20 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     BooksComponent,
     LoaderComponent,
     ScrollToTopComponent,
+
   ],
   imports: [
     HttpClientModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule,
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS,
+  providers: [
+
+
+    { provide: HTTP_INTERCEPTORS,
     useClass: LoadingInterceptor,
     multi: true}],
 
